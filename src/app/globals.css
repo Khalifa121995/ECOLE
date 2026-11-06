@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #0E1116;
+  color: #E6EDF3;
+}
+
+::selection {
+  background-color: #4FD1C5;
+  color: #0E1116;
+}
+
+.prose-lesson h2 {
+  @apply text-xl font-semibold mt-10 mb-3 text-text;
+}
+.prose-lesson h3 {
+  @apply text-lg font-semibold mt-8 mb-2 text-text;
+}
+.prose-lesson p {
+  @apply text-muted leading-relaxed mb-4;
+}
+.prose-lesson code {
+  @apply font-mono text-sm bg-surface2 px-1.5 py-0.5 rounded;
+}
+.prose-lesson pre {
+  @apply font-mono text-sm bg-surface2 border border-line rounded-lg p-4 overflow-x-auto mb-4;
+}
+.prose-lesson ul {
+  @apply list-disc list-inside text-muted mb-4 space-y-1;
+}
